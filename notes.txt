@@ -1,0 +1,6 @@
+586 active pores
+ - group 1: 376
+ - group 2: 157
+ - group 3: 45
+ - group 4: 8
+
