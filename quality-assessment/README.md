@@ -1,4 +1,4 @@
-## Ubiquitous Genomics Hackathon #1: Snack to Sequence
+## Ubiquitous Genomics Hackathon #2: CSI Columbia
 
 Group #3: The Minnows
  - Alex Kalicki (avk2116)
