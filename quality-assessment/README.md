@@ -9,6 +9,12 @@ Group #3: The Minnows
 
 ### Question 1
 
+As instructed, we calculated the number of 2D reads classified as "passed"
+versus the number classified as "failed". We obtained the following results:
+
+ - Passed: 4423 2D reads
+ - Failed: 2544 2D reads
+
 ### Question 2
 
 ### Question 3
