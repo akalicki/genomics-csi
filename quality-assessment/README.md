@@ -45,3 +45,10 @@ timestamp, and multiplying the total base pairs by 2.
 ### Question 7
 
 ### Question 8
+
+Strategies to reduce errors in reads:
+1) Imputation. We could use the imputation server [here](https://imputationserver.sph.umich.edu/index.html).
+This will allow 
+2) Select only 2D high-quality reads for processing to reduce the probability of errors in the reads. 
+3) Use the software AutoEditor at http://sourceforge.net/projects/amos/. The published paper is
+[here](http://nar.oxfordjournals.org/content/32/2/562.full). It improves base calling accuracy up to 99%. 
