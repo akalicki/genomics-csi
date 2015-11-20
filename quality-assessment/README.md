@@ -17,6 +17,9 @@ versus the number classified as "failed". We obtained the following results:
 
 ### Question 2
 
+In the process of performing a channel-read analysis, we obtained the following
+results:
+
 - Average reads per channel: 65
 - Channel with most reads: 295
 - Number of reads in Channel 295: 618
@@ -52,7 +55,7 @@ timestamp, and multiplying the total base pairs by 2.
 ### Question 4
 
 The following histograms depict the length distributions of 2D reads in
-the failed and passed folders.
+the passed and failed folders.
 
 ![cumulative failed nucleotides](images/q4_2D_pass.png)
 ![cumulative failed nucleotides](images/q4_2D_fail.png)
