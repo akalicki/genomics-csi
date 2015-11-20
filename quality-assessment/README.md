@@ -83,12 +83,12 @@ samtools view -c align.sam
 The computation matrix calculated when comparing the sample bases (rows) to the
 reference genome (columns) is copied below.
 
-|        | A          | C          | G          | T          |
-|--------|------------|------------|------------|------------|
-| *A*    | 19,994,641 | 11,616,203 | 11,610,805 | 16,607,907 |
-| *C*    | 12,328,159 | 11,021,783 |  8,638,487 | 12,354,693 |
-| *G*    | 12,443,709 |  8,722,146 | 11,116,532 | 12,446,410 |
-| *T*    | 16,607,907 | 11,707,644 | 11,678,545 | 20,160,615 |
+|          | A          | C          | G          | T          |
+|----------|------------|------------|------------|------------|
+| **A**    | 19,994,641 | 11,616,203 | 11,610,805 | 16,607,907 |
+| **C**    | 12,328,159 | 11,021,783 |  8,638,487 | 12,354,693 |
+| **G**    | 12,443,709 |  8,722,146 | 11,116,532 | 12,446,410 |
+| **T**    | 16,607,907 | 11,707,644 | 11,678,545 | 20,160,615 |
 
 Not that "A" and "T" nucleotides match with themselves far more often than "C"
 and "G" nucleotides. These findings raise the question of why some nucleotides
