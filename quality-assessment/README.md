@@ -17,6 +17,10 @@ versus the number classified as "failed". We obtained the following results:
 
 ### Question 2
 
+- Average reads per channel: 65
+- Channel with most reads: 295
+- Number of reads in Channel 295: 618
+
 ### Question 3
 
 The cumulative nucleotides from "passed" and "failed" 2D reads are plotted below
