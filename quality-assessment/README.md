@@ -37,10 +37,24 @@ by running the command "poretools stats", getting the total base pairs for each 
 timestamp, and multiplying the total base pairs by 2. 
 
 ### Question 4
+The following histograms depict the length distributions of 2D reads in
+the failed and passed folders.
+
+![cumulative failed nucleotides](images/q4_2D_pass.png)
+![cumulative failed nucleotides](images/q4_2D_fail.png)
 
 ### Question 5
+The following table shows the longest reads for the 2D strands:
+
+| Type       | Longest Read (nucleotides) |
+|------------|----------------------------|
+| Pass  	 | 32671                      |
+| Fail 		 | 26815                      |
 
 ### Question 6
+Using samtools, we were able to find how many reads aligned by using:
+<pre><code>samtools view -c align.sam</code></pre> 
+9653 reads were aligned using this tool.
 
 ### Question 7
 
