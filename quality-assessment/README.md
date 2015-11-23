@@ -80,8 +80,9 @@ samtools view -c align.sam
 
 ### Question 7
 
-The computation matrix calculated when comparing the sample bases (rows) to the
-reference genome (columns) is copied below.
+The confusion matrix calculated when comparing the sample bases (columns) to the
+reference genome (rows) is copied below. Dashes represent insertions and
+deletions.
 
 |          | A       | C       | G       | T       | -       |
 |----------|---------|---------|---------|---------|---------|
@@ -91,7 +92,7 @@ reference genome (columns) is copied below.
 | **T**    |   1,870 |   3,880 |   3,266 | 537,421 |  23,639 |
 | **-**    |  10,425 |  11,692 |  12,588 |  14,491 |       0 |
 
-Not that "A" and "T" nucleotides match with themselves far more often than "C"
+Note that "A" and "T" nucleotides match with themselves far more often than "C"
 and "G" nucleotides. These findings raise the question of why some nucleotides
 might align with themselves more than others, but are ultimately consistent with
 our results from the previous Hackathon.
