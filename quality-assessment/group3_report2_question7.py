@@ -24,7 +24,6 @@ def get_confusion(f):
         add_dict = get_new_entries(ref_base, read_bases)
         for key in add_dict:
             confusion[key] += add_dict[key]
-        print confusion
     return confusion
 
 bases = ['A','C','G','T']
@@ -41,7 +40,12 @@ def get_new_entries(ref_base, read_bases):
         elif char in bases:       # mismatch
             entries[(ref_base, char)] += 1
         elif char in ['+', '-']:  # indel
-            num_indels = int(read_bases[i + 1])
+            try:
+                num_indels = int(read_bases[i + 1])
+            except ValueError:
+                i += 1
+                continue
+
             for j in range(num_indels):
                 indel = read_bases[i + j + 2].upper()
                 if indel not in bases:
@@ -53,6 +57,7 @@ def get_new_entries(ref_base, read_bases):
             i += num_indels + 2
             continue
         i += 1
+
     return entries
 
 if __name__ == '__main__':
