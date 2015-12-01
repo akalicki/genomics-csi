@@ -1,0 +1,56 @@
+##fileformat=VCFv4.2
+##FILTER=<ID=PASS,Description="All filters passed">
+##samtoolsVersion=1.2+htslib-1.2.1
+##samtoolsCommand=samtools mpileup -C50 -uf ../../csi-processed/ref.fa chr/bam/mapped.baq.chr11.bam
+##reference=file://../../csi-processed/ref.fa
+##contig=<ID=chr11,length=135006516>
+##contig=<ID=chr11_gl000202_random,length=40103>
+##ALT=<ID=X,Description="Represents allele(s) other than observed.">
+##INFO=<ID=INDEL,Number=0,Type=Flag,Description="Indicates that the variant is an INDEL.">
+##INFO=<ID=IDV,Number=1,Type=Integer,Description="Maximum number of reads supporting an indel">
+##INFO=<ID=IMF,Number=1,Type=Float,Description="Maximum fraction of reads supporting an indel">
+##INFO=<ID=DP,Number=1,Type=Integer,Description="Raw read depth">
+##INFO=<ID=VDB,Number=1,Type=Float,Description="Variant Distance Bias for filtering splice-site artefacts in RNA-seq data (bigger is better)",Version="3">
+##INFO=<ID=RPB,Number=1,Type=Float,Description="Mann-Whitney U test of Read Position Bias (bigger is better)">
+##INFO=<ID=MQB,Number=1,Type=Float,Description="Mann-Whitney U test of Mapping Quality Bias (bigger is better)">
+##INFO=<ID=BQB,Number=1,Type=Float,Description="Mann-Whitney U test of Base Quality Bias (bigger is better)">
+##INFO=<ID=MQSB,Number=1,Type=Float,Description="Mann-Whitney U test of Mapping Quality vs Strand Bias (bigger is better)">
+##INFO=<ID=SGB,Number=1,Type=Float,Description="Segregation based metric.">
+##INFO=<ID=MQ0F,Number=1,Type=Float,Description="Fraction of MQ0 reads (smaller is better)">
+##FORMAT=<ID=PL,Number=G,Type=Integer,Description="List of Phred-scaled genotype likelihoods">
+##FORMAT=<ID=GT,Number=1,Type=String,Description="Genotype">
+##INFO=<ID=ICB,Number=1,Type=Float,Description="Inbreeding Coefficient Binomial test (bigger is better)">
+##INFO=<ID=HOB,Number=1,Type=Float,Description="Bias in the number of HOMs number (smaller is better)">
+##INFO=<ID=AC,Number=A,Type=Integer,Description="Allele count in genotypes for each ALT allele, in the same order as listed">
+##INFO=<ID=AN,Number=1,Type=Integer,Description="Total number of alleles in called genotypes">
+##INFO=<ID=DP4,Number=4,Type=Integer,Description="Number of high-quality ref-forward , ref-reverse, alt-forward and alt-reverse bases">
+##INFO=<ID=MQ,Number=1,Type=Integer,Description="Average mapping quality">
+##bcftools_callVersion=1.2-187-g1a55e45+htslib-1.2.1-252-ga2656aa
+##bcftools_callCommand=call -mv
+##FILTER=<ID=LowQual,Description="Set if true: %QUAL<20 || DP>100">
+##bcftools_filterVersion=1.2-187-g1a55e45+htslib-1.2.1-252-ga2656aa
+##bcftools_filterCommand=filter -s LowQual -e '%QUAL<20 || DP>100' chr/bam/chr11.raw.vcf
+#CHROM	POS	ID	REF	ALT	QUAL	FILTER	INFO	FORMAT	chr/bam/mapped.baq.chr11.bam
+chr11	13377830	.	GTC	GTCTC	19.229	LowQual	INDEL;IDV=1;IMF=1;DP=1;SGB=-0.379885;MQ0F=0;ICB=1;HOB=0.5;AC=1;AN=2;DP4=0,0,1,0;MQ=47	GT:PL	0/1:47,3,0
+chr11	13381069	.	T	TA	4.23403	LowQual	INDEL;IDV=1;IMF=1;DP=1;SGB=-0.379885;MQ0F=0;ICB=1;HOB=0.5;AC=1;AN=2;DP4=0,0,1,0;MQ=47	GT:PL	0/1:30,3,0
+chr11	13382593	.	gtaagct	gt	19.229	LowQual	INDEL;IDV=1;IMF=1;DP=1;SGB=-0.379885;MQ0F=0;ICB=1;HOB=0.5;AC=1;AN=2;DP4=0,0,1,0;MQ=47	GT:PL	0/1:47,3,0
+chr11	13383160	.	TG	TGGG	19.229	LowQual	INDEL;IDV=1;IMF=1;DP=1;SGB=-0.379885;MQ0F=0;ICB=1;HOB=0.5;AC=1;AN=2;DP4=0,0,1,0;MQ=47	GT:PL	0/1:47,3,0
+chr11	13384024	.	ctgtg	cTGtgtg	4.88321	LowQual	INDEL;IDV=1;IMF=1;DP=1;SGB=-0.379885;MQ0F=0;ICB=1;HOB=0.5;AC=1;AN=2;DP4=0,0,1,0;MQ=47	GT:PL	0/1:31,3,0
+chr11	19976471	.	gtatatacatatatatatacatatatacatatatatatacatatacacacatatatata	gtatata	22.2031	PASS	INDEL;IDV=1;IMF=1;DP=1;SGB=-0.379885;MQ0F=0;ICB=1;HOB=0.5;AC=1;AN=2;DP4=0,0,1,0;MQ=50	GT:PL	0/1:50,3,0
+chr11	59214547	.	ct	c	12.4322	LowQual	INDEL;IDV=1;IMF=1;DP=1;SGB=-0.379885;MQ0F=0;ICB=1;HOB=0.5;AC=1;AN=2;DP4=0,0,0,1;MQ=50	GT:PL	0/1:40,3,0
+chr11	71272759	.	catata	cata	10.575	LowQual	INDEL;IDV=1;IMF=1;DP=1;SGB=-0.379885;MQ0F=0;ICB=1;HOB=0.5;AC=1;AN=2;DP4=0,0,0,1;MQ=50	GT:PL	0/1:38,3,0
+chr11	71273934	.	a	aAGC	18.2424	LowQual	INDEL;IDV=1;IMF=1;DP=1;SGB=-0.379885;MQ0F=0;ICB=1;HOB=0.5;AC=1;AN=2;DP4=0,0,0,1;MQ=50	GT:PL	0/1:46,3,0
+chr11	76252967	.	CCTC	CC	4.88321	LowQual	INDEL;IDV=1;IMF=1;DP=1;SGB=-0.379885;MQ0F=0;ICB=1;HOB=0.5;AC=1;AN=2;DP4=0,0,0,1;MQ=38	GT:PL	0/1:31,3,0
+chr11	76254231	.	AT	ATCT	10.575	LowQual	INDEL;IDV=1;IMF=1;DP=1;SGB=-0.379885;MQ0F=0;ICB=1;HOB=0.5;AC=1;AN=2;DP4=0,0,0,1;MQ=38	GT:PL	0/1:38,3,0
+chr11	76255413	.	ATCT	ATCTCT	10.575	LowQual	INDEL;IDV=1;IMF=1;DP=1;SGB=-0.379885;MQ0F=0;ICB=1;HOB=0.5;AC=1;AN=2;DP4=0,0,0,1;MQ=38	GT:PL	0/1:38,3,0
+chr11	97161062	.	CTAT	CTATAT	13.3809	LowQual	INDEL;IDV=1;IMF=1;DP=1;SGB=-0.379885;MQ0F=0;ICB=1;HOB=0.5;AC=1;AN=2;DP4=0,0,0,1;MQ=50	GT:PL	0/1:41,3,0
+chr11	97167184	.	AACATA	AA	14.3397	LowQual	INDEL;IDV=1;IMF=1;DP=1;SGB=-0.379885;MQ0F=0;ICB=1;HOB=0.5;AC=1;AN=2;DP4=0,0,0,1;MQ=50	GT:PL	0/1:42,3,0
+chr11	108793036	.	ac	aCc	4.23403	LowQual	INDEL;IDV=1;IMF=1;DP=1;SGB=-0.379885;MQ0F=0;ICB=1;HOB=0.5;AC=1;AN=2;DP4=0,0,0,1;MQ=50	GT:PL	0/1:30,3,0
+chr11	108794730	.	G	GGCC	14.3397	LowQual	INDEL;IDV=1;IMF=1;DP=1;SGB=-0.379885;MQ0F=0;ICB=1;HOB=0.5;AC=1;AN=2;DP4=0,0,0,1;MQ=50	GT:PL	0/1:42,3,0
+chr11	117349988	.	CCCAC	CC	22.2031	PASS	INDEL;IDV=1;IMF=1;DP=1;SGB=-0.379885;MQ0F=0;ICB=1;HOB=0.5;AC=1;AN=2;DP4=0,0,0,1;MQ=50	GT:PL	0/1:50,3,0
+chr11	126068978	.	CA	CAA	4.88321	LowQual	INDEL;IDV=1;IMF=1;DP=1;SGB=-0.379885;MQ0F=0;ICB=1;HOB=0.5;AC=1;AN=2;DP4=0,0,1,0;MQ=50	GT:PL	0/1:31,3,0
+chr11	126072266	.	CCT	CCTCT	10.575	LowQual	INDEL;IDV=1;IMF=1;DP=1;SGB=-0.379885;MQ0F=0;ICB=1;HOB=0.5;AC=1;AN=2;DP4=0,0,1,0;MQ=50	GT:PL	0/1:38,3,0
+chr11	126076449	.	ctaa	c	22.2031	PASS	INDEL;IDV=1;IMF=1;DP=1;SGB=-0.379885;MQ0F=0;ICB=1;HOB=0.5;AC=1;AN=2;DP4=0,0,1,0;MQ=50	GT:PL	0/1:50,3,0
+chr11	126076986	.	TTTatt	Ttt	7.93807	LowQual	INDEL;IDV=1;IMF=1;DP=1;SGB=-0.379885;MQ0F=0;ICB=1;HOB=0.5;AC=1;AN=2;DP4=0,0,1,0;MQ=50	GT:PL	0/1:35,3,0
+chr11	126079362	.	T	TAC	22.2031	PASS	INDEL;IDV=1;IMF=1;DP=1;SGB=-0.379885;MQ0F=0;ICB=1;HOB=0.5;AC=1;AN=2;DP4=0,0,1,0;MQ=50	GT:PL	0/1:50,3,0
+chr11	126082116	.	GGC	G	4.88321	LowQual	INDEL;IDV=1;IMF=1;DP=1;SGB=-0.379885;MQ0F=0;ICB=1;HOB=0.5;AC=1;AN=2;DP4=0,0,1,0;MQ=50	GT:PL	0/1:31,3,0
