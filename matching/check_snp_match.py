@@ -21,7 +21,7 @@ def intersect_maps(snp_map, ref_map):
     """Return a map of all intersections of the snp_map and ref_map"""
     intersection = {}
     for rsid in snp_map:
-        if rsid in ref_map and snp_map[rsid] == ref_map[rsid]:
+        if rsid in ref_map:
             intersection[rsid] = snp_map[rsid]
     return intersection
 
