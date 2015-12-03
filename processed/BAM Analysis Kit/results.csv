@@ -1,5 +1,3 @@
-Population Set 1: AFRICA (N=246), EUROPE (N=380), EAST ASIA (N=286), AMERICA (N=181);
-SNP;chromosome;position;genes;reference;ancestral;var;population;N;freq_A;freq_C;freq_G;freq_T;MA;MAF;Hobs;Hexp;Fs;Fst;In;
 rs80326993;chr01;8834837;RERE;A;A;AG;Population Set 1;1093;1.000;0.000;0.000;0.000;G;0.000;0.001;0.001;-;0.142;0.001;
 rs80326993;chr01;8834837;RERE;A;A;AG;AFRICA;246;1.000;0.000;0.000;0.000;G;0;0.000;0.000;-;0.000;0.000;
 rs80326993;chr01;8834837;RERE;A;A;AG;EUROPE;380;1.000;0.000;0.000;0.000;G;0;0.000;0.000;-;0.000;0.000;
