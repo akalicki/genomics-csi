@@ -44,7 +44,7 @@ if __name__ == '__main__':
         id_matches = get_snp_matches(xml_file)
         matches_sorted = sorted(id_matches.items(), key=operator.itemgetter(1), reverse=True)
 
-        print "\n\nMATCH COUNTS:"
+        print "MATCH COUNTS:"
         print "----------------------------------------"
         for match in matches_sorted:
             print "%s\t%d" % (match[0], match[1])
