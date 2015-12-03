@@ -31,6 +31,7 @@ if __name__ == '__main__':
         ref_map = build_snp_map(ref_file)
         intersection = intersect_maps(snp_map, ref_map)
         num_intersect = len(intersection)
+        print('\n'.join(intersection))
         num_snps = len(snp_map)
         print "%d out of %d (%.2f%%) SNPs matched" \
             % (num_intersect, num_snps, num_intersect * 100.0 / num_snps)
