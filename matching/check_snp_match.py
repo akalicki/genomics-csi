@@ -33,4 +33,4 @@ if __name__ == '__main__':
         num_intersect = len(intersection)
         num_snps = len(snp_map)
         print "%d out of %d (%.2f%%) SNPs matched" \
-            % (num_intersect, num_snps, num_intersect * 1.0 / num_snps)
+            % (num_intersect, num_snps, num_intersect * 100.0 / num_snps)
