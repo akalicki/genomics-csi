@@ -1,6 +1,6 @@
 import sys
 
-def main():
+def method1():
 	infile = sys.argv[1]
 	outfile = sys.argv[2]
 	target = open(outfile, 'w')
@@ -12,4 +12,16 @@ def main():
 	        new_line = new_line + '\n'
 	        target.write(new_line)
 
-main()
+def method2():
+	infile = sys.argv[1]
+	outfile = sys.argv[2]
+	target = open(outfile, 'w')
+	with open(infile, 'r') as fp:
+	    for line in fp:
+	        data = line.split('\t')
+	        reformat = [data[10][:-1], data[0], data[1], data[3].replace("/","")]
+	        new_line = '\t'.join(reformat)
+	        new_line = new_line + '\n'
+	        target.write(new_line)
+
+method2()
